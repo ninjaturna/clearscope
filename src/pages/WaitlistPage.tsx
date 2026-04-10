@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import ClearScopeLogo from '../components/ClearScopeLogo'
+import Nav from '../components/Nav'
+import Footer from '../components/Footer'
 import ScanOverlay from '../components/ScanOverlay'
 import StickyBar from '../components/StickyBar'
 
@@ -57,15 +58,7 @@ export default function WaitlistPage() {
     <div className="bg-[#141414] min-h-screen text-[#E8E4DC] font-body pb-20">
 
       {/* ── NAV ── */}
-      <nav className="fixed top-0 w-full z-50 bg-[#141414] flex justify-between items-center px-4 py-4" style={{ borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
-        <ClearScopeLogo size="md" />
-        <button
-          onClick={scrollToForm}
-          className="bg-[#39D353] text-[#0D2010] font-mono text-[10px] font-bold px-3 py-2 uppercase tracking-widest"
-        >
-          JOIN WAITLIST
-        </button>
-      </nav>
+      <Nav ctaLabel="JOIN WAITLIST" onCtaClick={scrollToForm} />
 
       {/* ── ANNOUNCEMENT BANNER ── */}
       <div className="mt-16 bg-[#1C1B1B] py-3 px-4 flex items-center gap-3 overflow-hidden" style={{ borderBottom: '1px solid rgba(57,211,83,0.15)' }}>
@@ -405,23 +398,7 @@ export default function WaitlistPage() {
       </section>
 
       {/* ── FOOTER ── */}
-      <footer className="bg-[#141414] py-12 px-6 flex flex-col gap-6" style={{ borderTop: '1px solid rgba(61,74,59,0.20)' }}>
-        <ClearScopeLogo size="sm" />
-        <p className="font-mono text-[8px] text-[#6B7280] uppercase leading-loose">
-          ©2025 CLEARSCOPE DIAGNOSTICS. ALL RIGHTS RESERVED.<br />
-          PRIVACY // TERMS // SYSTEM_STATUS: ONLINE
-        </p>
-        <div className="grid grid-cols-2 gap-4">
-          <div className="flex flex-col gap-3">
-            <a href="#" className="font-mono text-[10px] text-[#6B7280] uppercase tracking-widest hover:text-[#39D353]">PRIVACY</a>
-            <a href="#" className="font-mono text-[10px] text-[#6B7280] uppercase tracking-widest hover:text-[#39D353]">TERMS</a>
-          </div>
-          <div className="flex flex-col gap-3">
-            <a href="#" className="font-mono text-[10px] text-[#6B7280] uppercase tracking-widest hover:text-[#39D353]">INSTAGRAM</a>
-            <a href="#" className="font-mono text-[10px] text-[#6B7280] uppercase tracking-widest hover:text-[#39D353]">LINKEDIN</a>
-          </div>
-        </div>
-      </footer>
+      <Footer includeOperatorLink />
 
       <StickyBar onBookClick={scrollToForm} />
     </div>
