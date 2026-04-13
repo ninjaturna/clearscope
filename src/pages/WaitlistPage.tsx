@@ -385,9 +385,11 @@ export default function WaitlistPage() {
 
       {/* ── DEPLOYMENT MAP ── */}
       <FloridaZipMap
-        highlightedZip={zip.length === 5 ? zip : undefined}
-        highlightedStatus={zipEntry?.status}
         onCtaClick={scrollToForm}
+        onZipChange={(newZip, newEntry) => {
+          setZip(newZip)
+          setZipEntry(newEntry)
+        }}
       />
 
       {/* ── FINAL CTA ── */}
