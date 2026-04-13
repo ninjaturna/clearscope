@@ -5,12 +5,12 @@ import Footer from '../components/Footer'
 type Category = 'ALL' | 'CAST IRON' | 'INDUSTRY WATCH' | 'HOW-TO' | 'GUIDES'
 
 const ARTICLES = [
-  { category: 'CAST IRON',      title: "5 Things Your Plumber Won't Tell You About That $8,000 Quote",       excerpt: 'How the inspection-to-repair pipeline works — and how to break out of it.',                     readTime: '8 MIN',  slug: 'plumber-wont-tell-you' },
-  { category: 'HOW-TO',         title: 'What a Sewer Camera Inspection Actually Shows You',                   excerpt: 'Deconstructing the visual data of a standard borescope pass.',                                 readTime: '14 MIN', slug: 'what-inspection-shows' },
-  { category: 'CAST IRON',      title: 'How to Tell If Your South Florida Home Has Cast Iron Pipes',           excerpt: 'Identification methods and what to do once you know.',                                         readTime: '6 MIN',  slug: 'identify-cast-iron-pipes' },
-  { category: 'INDUSTRY WATCH', title: 'The Hidden Cost of the "Free Inspection" Plumbers Offer',             excerpt: "Why free inspections aren't free and how the economics work.",                                  readTime: '10 MIN', slug: 'hidden-cost-free-inspection' },
-  { category: 'GUIDES',         title: "Sewer Camera vs. Hydro-Jet: What's the Difference?",                 excerpt: "When each service is appropriate and why they're not interchangeable.",                         readTime: '7 MIN',  slug: 'camera-vs-hydrojet' },
-] as const satisfies { category: Category; title: string; excerpt: string; readTime: string; slug: string }[]
+  { category: 'CAST IRON',      title: "5 Things Your Plumber Won't Tell You About That $8,000 Quote",       excerpt: 'How the inspection-to-repair pipeline works — and how to break out of it.',                     readTime: '2 MIN',  slug: 'plumber-wont-tell-you',        thumbnail: 'https://picsum.photos/seed/plumberquote/800/600?grayscale' },
+  { category: 'HOW-TO',         title: 'What a Sewer Camera Inspection Actually Shows You',                   excerpt: 'Deconstructing the visual data of a standard borescope pass.',                                 readTime: '4 MIN',  slug: 'what-inspection-shows',        thumbnail: 'https://picsum.photos/seed/sewercamera/800/600?grayscale' },
+  { category: 'CAST IRON',      title: 'How to Tell If Your South Florida Home Has Cast Iron Pipes',           excerpt: 'Identification methods and what to do once you know.',                                         readTime: '2 MIN',  slug: 'identify-cast-iron-pipes',     thumbnail: 'https://picsum.photos/seed/castironhome/800/600?grayscale' },
+  { category: 'INDUSTRY WATCH', title: 'The Hidden Cost of the "Free Inspection" Plumbers Offer',             excerpt: "Why free inspections aren't free and how the economics work.",                                  readTime: '3 MIN',  slug: 'hidden-cost-free-inspection',  thumbnail: 'https://picsum.photos/seed/freeinspect/800/600?grayscale' },
+  { category: 'GUIDES',         title: "Sewer Camera vs. Hydro-Jet: What's the Difference?",                 excerpt: "When each service is appropriate and why they're not interchangeable.",                         readTime: '2 MIN',  slug: 'camera-vs-hydrojet',           thumbnail: 'https://picsum.photos/seed/hydrojet/800/600?grayscale' },
+] as const satisfies { category: Category; title: string; excerpt: string; readTime: string; slug: string; thumbnail: string }[]
 
 export default function BlogIndexPage() {
   const [activeCategory, setActiveCategory] = useState<Category>('ALL')
@@ -82,7 +82,12 @@ export default function BlogIndexPage() {
             className="bg-[#1C1B1B] grid md:grid-cols-2 overflow-hidden"
             style={{ borderBottom: '4px solid #39D353' }}
           >
-            <div className="relative aspect-video md:aspect-auto bg-[#2A2A2A]">
+            <div className="relative aspect-video md:aspect-auto bg-[#2A2A2A] overflow-hidden">
+              <img
+                src="https://picsum.photos/seed/castironpipe/800/600?grayscale"
+                alt="Cast iron pipe infrastructure"
+                className="w-full h-full object-cover opacity-50"
+              />
               <div
                 className="absolute top-0 left-0 font-mono text-[10px] px-4 py-1 font-bold"
                 style={{ background: '#39D353', color: '#0D2010' }}
@@ -118,8 +123,12 @@ export default function BlogIndexPage() {
           {grid.map(article => (
             <article key={article.slug} className="flex flex-col group cursor-pointer">
               <a href={`/blog/${article.slug}`}>
-                <div className="aspect-square bg-[#1C1B1B] mb-5 overflow-hidden">
-                  <div className="w-full h-full bg-[#2A2A2A] group-hover:bg-[#353534] transition-colors" />
+                <div className="aspect-square bg-[#1C1B1B] mb-5 overflow-hidden relative">
+                  <img
+                    src={article.thumbnail}
+                    alt={article.title}
+                    className="w-full h-full object-cover grayscale opacity-50 group-hover:opacity-60 transition-opacity"
+                  />
                 </div>
                 <span className="font-mono text-[9px] text-[#39D353] uppercase tracking-widest font-bold mb-2 block">
                   {article.category}

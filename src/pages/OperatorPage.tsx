@@ -72,7 +72,16 @@ export default function OperatorPage() {
   return (
     <div className="bg-[#141414] min-h-screen text-[#E8E4DC] font-body">
 
-      <Nav ctaLabel="APPLY NOW" onCtaClick={scrollToForm} />
+      <Nav
+        ctaLabel="APPLY NOW"
+        onCtaClick={scrollToForm}
+        links={[
+          { label: 'How It Works', href: '/#how-it-works' },
+          { label: 'Pricing',      href: '/#pricing' },
+          { label: 'Blog',         href: '/blog' },
+          { label: 'Commercial',   href: '/commercial', active: true },
+        ]}
+      />
 
       {/* ── HERO ── */}
       <header

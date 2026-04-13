@@ -63,7 +63,16 @@ export default function WaitlistPage() {
     <div className="bg-[#141414] min-h-screen text-[#E8E4DC] font-body pb-20">
 
       {/* ── NAV ── */}
-      <Nav ctaLabel="JOIN WAITLIST" onCtaClick={scrollToForm} />
+      <Nav
+        ctaLabel="JOIN WAITLIST"
+        onCtaClick={scrollToForm}
+        links={[
+          { label: 'How It Works', href: '/#how-it-works' },
+          { label: 'Pricing',      href: '/#pricing' },
+          { label: 'Blog',         href: '/blog' },
+          { label: 'Commercial',   href: '/commercial' },
+        ]}
+      />
 
       {/* ── ANNOUNCEMENT BANNER ── */}
       <div className="mt-16 bg-[#1C1B1B] py-3 px-4 flex items-center gap-3 overflow-hidden" style={{ borderBottom: '1px solid rgba(57,211,83,0.15)' }}>

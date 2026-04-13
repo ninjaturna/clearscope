@@ -9,7 +9,16 @@ export default function BookingConfirmedPage() {
   return (
     <div className="bg-[#141414] min-h-screen text-[#E8E4DC] font-body">
 
-      <Nav ctaLabel="BOOK NOW" ctaHref="/waitlist" />
+      <Nav
+        ctaLabel="BOOK NOW"
+        ctaHref="/waitlist"
+        links={[
+          { label: 'How It Works', href: '/#how-it-works' },
+          { label: 'Pricing',      href: '/#pricing' },
+          { label: 'Blog',         href: '/blog' },
+          { label: 'Commercial',   href: '/commercial' },
+        ]}
+      />
 
       <main className="mt-16 flex flex-col items-center justify-center min-h-[80vh] px-6 py-24 text-center">
 

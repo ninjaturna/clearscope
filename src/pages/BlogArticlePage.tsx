@@ -53,7 +53,7 @@ export default function BlogArticlePage() {
           <span className="hidden md:block text-[#3D4A3B]">//</span>
           <span>APRIL 2026</span>
           <span className="hidden md:block text-[#3D4A3B]">//</span>
-          <span>8 MIN READ</span>
+          <span>2 MIN READ</span>
         </div>
       </header>
 
@@ -144,13 +144,17 @@ export default function BlogArticlePage() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
-            { category: 'INDUSTRY WATCH', title: "5 Things Your Plumber Won't Tell You About That $8,000 Quote", readTime: '8 MIN READ' },
-            { category: 'HOW-TO',         title: 'What a Sewer Camera Inspection Actually Shows You',            readTime: '14 MIN READ' },
-            { category: 'GUIDES',         title: 'How to Tell if Your South Florida Home Has Cast Iron Pipes',   readTime: '6 MIN READ' },
+            { category: 'INDUSTRY WATCH', title: "5 Things Your Plumber Won't Tell You About That $8,000 Quote", readTime: '2 MIN READ', thumbnail: 'https://picsum.photos/seed/plumberquote/600/600?grayscale' },
+            { category: 'HOW-TO',         title: 'What a Sewer Camera Inspection Actually Shows You',            readTime: '4 MIN READ', thumbnail: 'https://picsum.photos/seed/sewercamera/600/600?grayscale' },
+            { category: 'GUIDES',         title: 'How to Tell if Your South Florida Home Has Cast Iron Pipes',   readTime: '2 MIN READ', thumbnail: 'https://picsum.photos/seed/castironhome/600/600?grayscale' },
           ].map(card => (
             <article key={card.title} className="flex flex-col cursor-pointer group">
               <div className="aspect-square bg-[#1C1B1B] mb-5 overflow-hidden">
-                <div className="w-full h-full bg-[#2A2A2A]" />
+                <img
+                  src={card.thumbnail}
+                  alt={card.title}
+                  className="w-full h-full object-cover grayscale opacity-50 group-hover:opacity-60 transition-opacity"
+                />
               </div>
               <span className="font-mono text-[9px] text-[#39D353] uppercase tracking-widest font-bold mb-2">{card.category}</span>
               <h3 className="font-headline text-lg text-white font-bold uppercase leading-tight mb-4 group-hover:text-[#39D353] transition-colors">
