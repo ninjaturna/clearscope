@@ -3,6 +3,8 @@ import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 import ScanOverlay from '../components/ScanOverlay'
 import StickyBar from '../components/StickyBar'
+import FloridaZipMap from '../components/FloridaZipMap'
+import { lookupZip, ZIP_STATUS_COPY, ZipEntry } from '../data/zipLookup'
 
 type PropertyType = 'residential' | 'commercial'
 type Situation = 'slow-drain' | 'got-quote' | 'buying-selling' | 'planning-ahead'
@@ -14,6 +16,7 @@ export default function WaitlistPage() {
   const [email, setEmail] = useState('')
   const [zip, setZip] = useState('')
   const [submitState, setSubmitState] = useState<SubmitState>('idle')
+  const [zipEntry, setZipEntry] = useState<ZipEntry | null>(null)
 
   const toggleSituation = (s: Situation) =>
     setSituations(prev =>
@@ -32,6 +35,8 @@ export default function WaitlistPage() {
           formType: 'clearscope_waitlist',
           email,
           zip,
+          zipStatus: zipEntry?.status ?? 'unknown',
+          city: zipEntry?.city ?? '',
           propertyType,
           situations,
           timestamp: new Date().toISOString(),
@@ -203,15 +208,31 @@ export default function WaitlistPage() {
       {/* ── SIGNUP FORM ── */}
       <section className="bg-[#141414] py-16 px-6" id="waitlist-form">
         <div className="text-center mb-10">
-          <h2 className="font-headline text-3xl text-white mb-2 uppercase">Secure Your Spot.</h2>
-          <p className="font-mono text-[10px] text-[#39D353] tracking-widest uppercase">NORTH MIAMI BEACH // EARLY ACCESS</p>
+          {(() => {
+            const copy = ZIP_STATUS_COPY[zipEntry?.status ?? 'live']
+            return (
+              <>
+                <h2 className="font-headline text-3xl text-white mb-2 uppercase">{copy.headline}</h2>
+                <p className="font-mono text-[10px] text-[#39D353] tracking-widest uppercase">
+                  {copy.subhead.replace('{city}', zipEntry?.city ?? 'North Miami Beach')}
+                </p>
+              </>
+            )
+          })()}
         </div>
 
         {submitState === 'success' ? (
           <div className="bg-[#1C1B1B] p-8 text-center" style={{ borderTop: '3px solid #39D353' }}>
             <span className="material-symbols-outlined text-[#39D353] text-5xl mb-4 block">check_circle</span>
-            <h3 className="font-headline text-2xl text-white uppercase mb-2">You're on the list.</h3>
-            <p className="font-body text-[#9CA3AF] text-sm">We'll notify you the moment we're taking appointments in North Miami Beach.</p>
+            {(() => {
+              const copy = ZIP_STATUS_COPY[zipEntry?.status ?? 'live']
+              return (
+                <>
+                  <h3 className="font-headline text-2xl text-white uppercase mb-2">{copy.successH}</h3>
+                  <p className="font-body text-[#9CA3AF] text-sm">{copy.successBody.replace('{city}', zipEntry?.city ?? 'North Miami Beach')}</p>
+                </>
+              )
+            })()}
             <p className="font-mono text-[10px] text-[#6B7280] mt-4 uppercase tracking-widest">No payment required. Unsubscribe anytime.</p>
           </div>
         ) : (
@@ -244,16 +265,30 @@ export default function WaitlistPage() {
                 <input
                   type="text"
                   required
-                  maxLength={5}
                   value={zip}
-                  onChange={e => setZip(e.target.value)}
+                  onChange={e => {
+                    const val = e.target.value.replace(/\D/g, '').slice(0, 5)
+                    setZip(val)
+                    if (val.length === 5) setZipEntry(lookupZip(val))
+                    else setZipEntry(null)
+                  }}
                   placeholder="33160"
                   className="w-full bg-transparent text-white font-mono text-sm py-3 px-0 placeholder-[#6B7280]"
                   style={{ borderBottom: '1px solid rgba(61,74,59,0.40)', outline: 'none' }}
                   onFocus={e => { e.currentTarget.style.borderBottomColor = '#39D353' }}
                   onBlur={e => { e.currentTarget.style.borderBottomColor = 'rgba(61,74,59,0.40)' }}
                 />
-                <p className="font-mono text-[9px] text-[#6B7280] mt-1">NMB: 33160 or 33162</p>
+                {zipEntry && (
+                  <div className="mt-2 flex items-center gap-2">
+                    <span
+                      className="w-2 h-2 shrink-0"
+                      style={{ background: zipEntry.status === 'live' ? '#39D353' : zipEntry.status === 'coming_soon' ? 'rgba(57,211,83,0.5)' : '#353534' }}
+                    />
+                    <span className="font-mono text-[9px] uppercase" style={{ color: zipEntry.status === 'live' ? '#39D353' : '#6B7280' }}>
+                      {zipEntry.status === 'live' ? `LIVE — ${zipEntry.city}` : zipEntry.status === 'coming_soon' ? `COMING SOON — ${zipEntry.city}` : `NOT YET SERVED — ${zipEntry.city}`}
+                    </span>
+                  </div>
+                )}
               </div>
               <div>
                 <label className="font-mono text-[10px] text-[#6B7280] uppercase block mb-2">
@@ -309,7 +344,7 @@ export default function WaitlistPage() {
               disabled={submitState === 'loading'}
               className="w-full bg-[#39D353] text-[#0D2010] py-5 font-headline font-extrabold text-lg uppercase tracking-tight disabled:opacity-60"
             >
-              {submitState === 'loading' ? 'SUBMITTING...' : "NOTIFY ME WHEN WE'RE BOOKING"}
+              {submitState === 'loading' ? 'SUBMITTING...' : ZIP_STATUS_COPY[zipEntry?.status ?? 'live'].cta}
             </button>
 
             <p className="font-mono text-[9px] text-[#6B7280] text-center uppercase tracking-widest">
@@ -349,38 +384,11 @@ export default function WaitlistPage() {
       <FAQ />
 
       {/* ── DEPLOYMENT MAP ── */}
-      <section className="bg-[#141414] py-16 px-6">
-        <p className="font-mono text-[10px] text-[#39D353] uppercase tracking-widest mb-8">EXPANSION TERRITORIES</p>
-        <div className="grid grid-cols-2 gap-3">
-          {[
-            { name: 'North Miami Beach', zip: '33160', status: 'open' },
-            { name: 'Miami Shores',      zip: '33138', status: 'soon' },
-            { name: 'North Miami',       zip: '33161', status: 'soon' },
-            { name: 'Broward County',    zip: '',      status: '2027' },
-          ].map(t => (
-            <div
-              key={t.name}
-              className="bg-[#1C1B1B] p-5 flex flex-col justify-between min-h-[120px]"
-              style={{ opacity: t.status === 'open' ? 1 : t.status === '2027' ? 0.4 : 0.6 }}
-            >
-              <div>
-                {t.zip && <p className="font-mono text-[10px] text-[#39D353] mb-1">{t.zip}</p>}
-                <p className="font-headline text-base uppercase">{t.name}</p>
-              </div>
-              <span
-                className="self-start font-mono text-[9px] font-bold px-2 py-1"
-                style={{
-                  background: t.status === 'open' ? '#39D353' : 'transparent',
-                  color: t.status === 'open' ? '#0D2010' : '#6B7280',
-                  border: t.status === 'open' ? 'none' : '1px solid rgba(61,74,59,0.40)',
-                }}
-              >
-                {t.status === 'open' ? 'OPEN_NOW' : t.status === 'soon' ? 'COMING_SOON' : 'LAUNCHING 2027'}
-              </span>
-            </div>
-          ))}
-        </div>
-      </section>
+      <FloridaZipMap
+        highlightedZip={zip.length === 5 ? zip : undefined}
+        highlightedStatus={zipEntry?.status}
+        onCtaClick={scrollToForm}
+      />
 
       {/* ── FINAL CTA ── */}
       <section className="bg-[#0E0E0E] py-24 px-6 text-center">
