@@ -99,10 +99,28 @@ const DOT_FILL: Record<ZipStatus, string> = {
   unserved:    'rgba(57,211,83,0.10)',
 }
 
+const MIN_ZOOM = 1
+const MAX_ZOOM = 4
+const ZOOM_STEP = 0.75
+// Focal center — South Florida dot cluster
+const FOCAL_X = 152
+const FOCAL_Y = 360
+
 export default function FloridaZipMap({ onCtaClick, onZipChange }: FloridaZipMapProps) {
   const [zip, setZip] = useState('')
   const [entry, setEntry] = useState<ZipEntry | null>(null)
   const [inputFocused, setInputFocused] = useState(false)
+  const [zoom, setZoom] = useState(1)
+
+  const zoomIn  = () => setZoom(z => Math.min(MAX_ZOOM, parseFloat((z + ZOOM_STEP).toFixed(2))))
+  const zoomOut = () => setZoom(z => Math.max(MIN_ZOOM, parseFloat((z - ZOOM_STEP).toFixed(2))))
+
+  // Dynamic viewBox — crop around South FL as zoom increases
+  const vbW = 280 / zoom
+  const vbH = 520 / zoom
+  const vbX = Math.max(0, Math.min(FOCAL_X - vbW / 2, 280 - vbW))
+  const vbY = Math.max(0, Math.min(FOCAL_Y - vbH / 2, 520 - vbH))
+  const dynamicViewBox = `${vbX} ${vbY} ${vbW} ${vbH}`
 
   const handleZipChange = (val: string) => {
     const clean = val.replace(/\D/g, '').slice(0, 5)
@@ -212,9 +230,38 @@ export default function FloridaZipMap({ onCtaClick, onZipChange }: FloridaZipMap
           }}
         />
 
+        {/* Zoom controls — bottom-left overlay */}
+        <div className="absolute bottom-4 left-4 z-10 flex flex-col gap-1">
+          <button
+            onClick={zoomIn}
+            disabled={zoom >= MAX_ZOOM}
+            aria-label="Zoom in"
+            className="w-8 h-8 flex items-center justify-center font-mono text-sm font-bold disabled:opacity-30"
+            style={{
+              background: '#0E0E0E',
+              border: '1px solid rgba(57,211,83,0.35)',
+              color: '#39D353',
+            }}
+          >+</button>
+          <button
+            onClick={zoomOut}
+            disabled={zoom <= MIN_ZOOM}
+            aria-label="Zoom out"
+            className="w-8 h-8 flex items-center justify-center font-mono text-sm font-bold disabled:opacity-30"
+            style={{
+              background: '#0E0E0E',
+              border: '1px solid rgba(57,211,83,0.35)',
+              color: '#39D353',
+            }}
+          >−</button>
+          <span className="font-mono text-[8px] text-[#353534] uppercase text-center mt-0.5">
+            {zoom.toFixed(zoom % 1 === 0 ? 0 : 1)}×
+          </span>
+        </div>
+
         {/* Florida SVG — fills full component width */}
         <svg
-          viewBox="0 0 280 520"
+          viewBox={dynamicViewBox}
           xmlns="http://www.w3.org/2000/svg"
           style={{ width: '100%', display: 'block', maxHeight: '480px' }}
           aria-label="Florida service territory map"
