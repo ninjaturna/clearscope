@@ -26,6 +26,7 @@ export default function Footer({ includeOperatorLink = false }: FooterProps) {
         <div className="flex flex-col gap-3">
           <a href="/" className="font-mono text-[10px] text-[#6B7280] uppercase tracking-widest hover:text-[#39D353]">HOME</a>
           <a href="/blog" className="font-mono text-[10px] text-[#6B7280] uppercase tracking-widest hover:text-[#39D353]">BLOG</a>
+          <a href="/pitch" className="font-mono text-[10px] text-[#6B7280] uppercase tracking-widest hover:text-[#39D353]">PITCH</a>
           <a href="/commercial" className="font-mono text-[10px] text-[#6B7280] uppercase tracking-widest hover:text-[#39D353]">COMMERCIAL</a>
         </div>
         <div className="flex flex-col gap-3">

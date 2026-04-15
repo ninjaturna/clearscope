@@ -33,6 +33,15 @@ export default function Nav({
             <a
               key={link.label}
               href={link.href}
+              onClick={(e) => {
+                const isAnchor = link.href.startsWith('#') || link.href.startsWith('/#')
+                if (isAnchor) {
+                  e.preventDefault()
+                  const id = link.href.replace('/#', '').replace('#', '')
+                  const el = document.getElementById(id)
+                  if (el) el.scrollIntoView({ behavior: 'smooth' })
+                }
+              }}
               className="font-mono text-[11px] uppercase tracking-widest transition-none"
               style={{ color: link.active ? '#39D353' : 'rgba(240,237,230,0.55)' }}
             >

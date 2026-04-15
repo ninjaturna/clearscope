@@ -4,9 +4,11 @@ interface CalloutProps {
   body: string
   imageUrl?: string
   imageCaption?: string
+  imageAlt?: string
+  imageDataPrompt?: string
 }
 
-export default function ArticleCallout({ label, headline, body, imageUrl, imageCaption }: CalloutProps) {
+export default function ArticleCallout({ label, headline, body, imageUrl, imageCaption, imageAlt, imageDataPrompt }: CalloutProps) {
   return (
     <div className="bg-[#1C1B1B] p-8 my-12 text-white">
       <div className="flex justify-between items-start mb-8">
@@ -23,7 +25,7 @@ export default function ArticleCallout({ label, headline, body, imageUrl, imageC
       </div>
       {imageUrl && (
         <div className="aspect-video w-full bg-[#131313] overflow-hidden mb-5 relative">
-          <img src={imageUrl} alt={headline} className="w-full h-full object-cover opacity-40 grayscale" />
+          <img src={imageUrl} alt={imageAlt ?? headline} className="w-full h-full object-cover opacity-40 grayscale" data-prompt={imageDataPrompt} />
           <div className="absolute inset-0" style={{ border: '1px solid rgba(57,211,83,0.10)' }} />
           {imageCaption && (
             <div className="absolute bottom-3 left-3 font-mono text-[10px] text-[#39D353]">{imageCaption}</div>

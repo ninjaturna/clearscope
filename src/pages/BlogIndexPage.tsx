@@ -5,12 +5,52 @@ import Footer from '../components/Footer'
 type Category = 'ALL' | 'CAST IRON' | 'INDUSTRY WATCH' | 'HOW-TO' | 'GUIDES'
 
 const ARTICLES = [
-  { category: 'CAST IRON',      title: "5 Things Your Plumber Won't Tell You About That $8,000 Quote",       excerpt: 'How the inspection-to-repair pipeline works — and how to break out of it.',                     readTime: '2 MIN',  slug: 'plumber-wont-tell-you',        thumbnail: 'https://picsum.photos/seed/plumberquote/800/600?grayscale' },
-  { category: 'HOW-TO',         title: 'What a Sewer Camera Inspection Actually Shows You',                   excerpt: 'Deconstructing the visual data of a standard borescope pass.',                                 readTime: '4 MIN',  slug: 'what-inspection-shows',        thumbnail: 'https://picsum.photos/seed/sewercamera/800/600?grayscale' },
-  { category: 'CAST IRON',      title: 'How to Tell If Your South Florida Home Has Cast Iron Pipes',           excerpt: 'Identification methods and what to do once you know.',                                         readTime: '2 MIN',  slug: 'identify-cast-iron-pipes',     thumbnail: 'https://picsum.photos/seed/castironhome/800/600?grayscale' },
-  { category: 'INDUSTRY WATCH', title: 'The Hidden Cost of the "Free Inspection" Plumbers Offer',             excerpt: "Why free inspections aren't free and how the economics work.",                                  readTime: '3 MIN',  slug: 'hidden-cost-free-inspection',  thumbnail: 'https://picsum.photos/seed/freeinspect/800/600?grayscale' },
-  { category: 'GUIDES',         title: "Sewer Camera vs. Hydro-Jet: What's the Difference?",                 excerpt: "When each service is appropriate and why they're not interchangeable.",                         readTime: '2 MIN',  slug: 'camera-vs-hydrojet',           thumbnail: 'https://picsum.photos/seed/hydrojet/800/600?grayscale' },
-] as const satisfies { category: Category; title: string; excerpt: string; readTime: string; slug: string; thumbnail: string }[]
+  {
+    category: 'CAST IRON' as Category,
+    title: "5 Things Your Plumber Won't Tell You About That $8,000 Quote",
+    excerpt: 'How the inspection-to-repair pipeline works — and how to break out of it.',
+    readTime: '2 MIN',
+    slug: 'plumber-wont-tell-you',
+    imgAlt: "Plumber writing on a clipboard near a pipe with diagnostic tools. Grayscale, moody lighting.",
+    dataPrompt: "A plumber's hands writing on a repair estimate clipboard. Pipes and wrenches visible in background. Moody dark lighting. High contrast grayscale editorial photography.",
+  },
+  {
+    category: 'HOW-TO' as Category,
+    title: 'What a Sewer Camera Inspection Actually Shows You',
+    excerpt: 'Deconstructing the visual data of a standard borescope pass.',
+    readTime: '4 MIN',
+    slug: 'what-inspection-shows',
+    imgAlt: "Sewer camera inspection head with LED lights inside a dark pipe. High contrast industrial macro photography.",
+    dataPrompt: "A small robotic sewer inspection camera with ring of LED lights photographed inside a dark pipe. The camera is self-leveling. Cinematic industrial photography, high contrast, dark background, slight green tint from the LED.",
+  },
+  {
+    category: 'CAST IRON' as Category,
+    title: 'How to Tell If Your South Florida Home Has Cast Iron Pipes',
+    excerpt: 'Identification methods and what to do once you know.',
+    readTime: '2 MIN',
+    slug: 'identify-cast-iron-pipes',
+    imgAlt: "Mid-century ranch house exterior in South Florida, showing the style of homes built in the 1960s-70s that typically have cast iron pipes.",
+    dataPrompt: "Exterior of a 1960s mid-century ranch style home in South Florida. Low flat roofline, jalousie windows, concrete block construction. Palm tree visible. Late afternoon golden hour light. Documentary grayscale photography.",
+  },
+  {
+    category: 'INDUSTRY WATCH' as Category,
+    title: 'The Hidden Cost of the "Free Inspection" Plumbers Offer',
+    excerpt: "Why free inspections aren't free and how the economics work.",
+    readTime: '3 MIN',
+    slug: 'hidden-cost-free-inspection',
+    imgAlt: "A plumber's van parked in front of a residential home, 'FREE INSPECTION' text visible on the side. Skeptical, exposé tone.",
+    dataPrompt: "Plumbing company van parked in front of a Florida suburban home. 'FREE INSPECTION' visible on van door. The van door is slightly ominous, dark tone. Documentary photography, slightly low angle, overcast light, high contrast grayscale, editorial exposé style.",
+  },
+  {
+    category: 'GUIDES' as Category,
+    title: "Sewer Camera vs. Hydro-Jet: What's the Difference?",
+    excerpt: "When each service is appropriate and why they're not interchangeable.",
+    readTime: '2 MIN',
+    slug: 'camera-vs-hydrojet',
+    imgAlt: "A high-pressure hydro-jet nozzle next to a sewer camera inspection head. Industrial plumbing equipment comparison. Grayscale photography.",
+    dataPrompt: "Side-by-side comparison of a sewer camera inspection head and a hydro-jet nozzle on a concrete floor. Industrial plumbing equipment, cinematic lighting, high contrast grayscale photography.",
+  },
+]
 
 export default function BlogIndexPage() {
   const [activeCategory, setActiveCategory] = useState<Category>('ALL')
@@ -84,9 +124,10 @@ export default function BlogIndexPage() {
           >
             <div className="relative aspect-video md:aspect-auto bg-[#2A2A2A] overflow-hidden">
               <img
-                src="https://picsum.photos/seed/castironpipe/800/600?grayscale"
-                alt="Cast iron pipe infrastructure"
-                className="w-full h-full object-cover opacity-50"
+                src=""
+                alt="Severely corroded cast iron pipe cross-section showing interior decay and channeling. Dark cinematic macro photography."
+                className="absolute inset-0 w-full h-full object-cover grayscale opacity-50 blog-thumb"
+                data-prompt="Macro photography of severely corroded cast iron pipe interior. Channeling erosion visible along pipe floor. Rust and mineral buildup. Cinematic dark background, high contrast, black and white with slight green color grade. Borescope POV."
               />
               <div
                 className="absolute top-0 left-0 font-mono text-[10px] px-4 py-1 font-bold"
@@ -125,9 +166,10 @@ export default function BlogIndexPage() {
               <a href={`/blog/${article.slug}`}>
                 <div className="aspect-square bg-[#1C1B1B] mb-5 overflow-hidden relative">
                   <img
-                    src={article.thumbnail}
-                    alt={article.title}
-                    className="w-full h-full object-cover grayscale opacity-50 group-hover:opacity-60 transition-opacity"
+                    src=""
+                    alt={article.imgAlt}
+                    className="w-full h-full object-cover grayscale opacity-50 group-hover:opacity-60 transition-opacity blog-thumb"
+                    data-prompt={article.dataPrompt}
                   />
                 </div>
                 <span className="font-mono text-[9px] text-[#39D353] uppercase tracking-widest font-bold mb-2 block">

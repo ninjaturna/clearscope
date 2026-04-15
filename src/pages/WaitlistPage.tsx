@@ -195,7 +195,7 @@ export default function WaitlistPage() {
       </section>
 
       {/* ── WHAT YOU GET ── */}
-      <section className="bg-[#F0EDE6] py-16 px-6">
+      <section className="bg-[#F0EDE6] py-16 px-6" id="how-it-works">
         <h2 className="font-headline text-3xl text-[#1A1A1A] mb-10 leading-none uppercase">What $149 gets you</h2>
         <div className="space-y-10">
           {[
@@ -364,7 +364,7 @@ export default function WaitlistPage() {
       </section>
 
       {/* ── BENEFIT CARDS ── */}
-      <section className="px-6 py-12 space-y-4 bg-[#141414]">
+      <section className="px-6 py-12 space-y-4 bg-[#141414]" id="pricing">
         {[
           { label: 'PRIORITY BOOKING',    body: 'First on the list gets first appointment slots when we open for bookings.' },
           { label: 'FOUNDING RATE LOCKED', body: 'Early signups are locked at $149 — the lowest ClearScope will ever charge.' },
