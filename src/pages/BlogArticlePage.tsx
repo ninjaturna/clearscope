@@ -60,7 +60,7 @@ export default function BlogArticlePage() {
       {/* ── HERO IMAGE WITH GRID OVERLAY ── */}
       <section className="w-full h-[320px] md:h-[530px] relative overflow-hidden bg-black">
         <img
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuByzCFiHpCpy9SQpLujv1ar1UJQi_oHVCOqvDQwKJ80SFa8CT7oO6GJsVWMFac6Jpmk5I7km3umgIQ0kY76r7ico_Nzzwxdluwv3TuGARWfXbSUio-H2dxSV46FA-4aqlyfVsyKL6F2F45PuTn_Iz8cGpX3bAj9MBw_tnckX8fXCYNBLQ_xyMMvraIe5YZE3X2jr077YStNIDE5zoAuxx0rbWQYdGLkb5swe6S5a-xYubGzChzaDoLT2Nwc1VlpA-r2XVo5Ky2xvDB1"
+          src="/images/blog/ClearScope Blog Images-1-Hero Cast Iron Article Hero.jpg"
           alt="Close-up cross-section of a severely corroded cast iron sewer pipe, showing heavy rust, channeling damage, and orange-brown oxidation buildup on the interior walls. Industrial macro photography, dark cinematic lighting, high contrast black and white with green tint."
           className="w-full h-full object-cover grayscale opacity-60"
           data-prompt="Macro photography of a corroded cast iron sewer pipe cross-section interior. Heavy rust, channeling erosion along the pipe floor, orange-brown mineral buildup. Cinematic industrial lighting, deep shadows. Black and white with slight green color grade. Shot with a borescope camera lens."
@@ -112,7 +112,7 @@ export default function BlogArticlePage() {
             label="Cross-Section Analysis"
             headline="Stage 4 Channeling"
             body="Visualizing the breakdown of the pipe's floor (Channeling). This allows raw sewage to exit the pipe and erode the soil directly beneath your foundation, leading to sinkhole pockets and cracked terrazzo or tile floors."
-            imageUrl="https://lh3.googleusercontent.com/aida-public/AB6AXuD8mSJBHdMzbS8hGSL2AQ4WULbcDV3iEsKS_3R6B1ywIgBG23JYhFyh5zXYnuLdLyU0WD_B5Cr1HluVlDHQi1KaGsXjyFRbP0rrpWgxq76BKf_4NLtOo2VCou586joNA-pKmKWC9XEyXheium9-9r-oSCztKc1WdLKnVLcQ4maeKHa1rB2jiHOTie0VkGQGPMIuJ2v3krLocDKBkO6ZWOzT6T45px-fwhn9s3dnbUTyN_BRWlPtiL0WE-X9SO1IQejKb9HpuWmWSs4i"
+            imageUrl="/images/blog/ClearScope Blog Images-4-Hero Cast Iron Article - Call Out Diagram.jpg"
             imageCaption="FIG_02: OXIDATION_CAVITY"
             imageAlt="Technical diagram showing cross-section of a cast iron pipe with Stage 4 channeling erosion. The pipe floor is eaten away in a channel pattern, exposing bare metal. Labeled diagram style, dark background, green diagnostic overlay lines."
             imageDataPrompt="Cross-section technical diagram of a cast iron pipe interior showing Stage 4 channeling erosion. The bottom of the pipe is completely eaten through in a channel pattern. Scientific illustration style, dark background #141414, Scope Green #39D353 overlay markings and callout lines. High contrast industrial."
@@ -151,28 +151,31 @@ export default function BlogArticlePage() {
               category: 'INDUSTRY WATCH',
               title: "5 Things Your Plumber Won't Tell You About That $8,000 Quote",
               readTime: '2 MIN READ',
-              imgAlt: "A plumber's invoice on a clipboard showing an inflated repair quote, partially visible dollar amounts. Dark moody lighting, shallow depth of field, high contrast black and white.",
+              imgSrc: '/images/blog/ClearScope Blog Images-11-Blog Card 1 — Plumber Quote - Blog Grid.jpg',
+              imgAlt: "Close-up of a plumbing repair invoice on a clipboard",
               dataPrompt: "Close-up of a paper plumbing repair invoice on a clipboard with a large dollar amount visible. Moody dark background, shallow depth of field, high contrast grayscale. The numbers suggest a large unexpected bill. Editorial photography style.",
             },
             {
               category: 'HOW-TO',
               title: 'What a Sewer Camera Inspection Actually Shows You',
               readTime: '4 MIN READ',
-              imgAlt: "First-person POV of a sewer camera being inserted into a dark pipe cleanout. The camera head with LED lights is visible entering the opening. Dark, industrial, high contrast.",
+              imgSrc: '/images/blog/ClearScope Blog Images-15-Blog Card 2 — Camera Inspection - Blog Grid.jpg',
+              imgAlt: "Sewer camera inspection head with LED lights inside a dark pipe",
               dataPrompt: "First-person point-of-view shot of a small camera inspection head with bright LED lights being guided into a residential sewer cleanout port. Concrete surround, dark pipe interior visible ahead. Cinematic, high contrast, industrial lighting.",
             },
             {
               category: 'GUIDES',
               title: 'How to Tell if Your South Florida Home Has Cast Iron Pipes',
               readTime: '2 MIN READ',
-              imgAlt: "Underside of a mid-century South Florida home showing exposed cast iron drain pipes in the crawl space or under a concrete slab. Pipes show surface rust. Natural light, documentary style.",
+              imgSrc: '/images/blog/ClearScope Blog Images-19-Blog Card 3 — Cast Iron Home - Blog Grid.jpg',
+              imgAlt: "Underside view of cast iron pipes in a 1960s South Florida home",
               dataPrompt: "Under-slab view of exposed cast iron plumbing pipes in a 1960s South Florida home. Pipes show surface oxidation and rust. Concrete slab visible above. Documentary photography, natural ambient light, high contrast grayscale, editorial style.",
             },
           ].map(card => (
             <article key={card.title} className="flex flex-col cursor-pointer group">
               <div className="aspect-square bg-[#1C1B1B] mb-5 overflow-hidden">
                 <img
-                  src=""
+                  src={card.imgSrc}
                   alt={card.imgAlt}
                   className="w-full h-full object-cover grayscale opacity-60 blog-thumb"
                   data-prompt={card.dataPrompt}
