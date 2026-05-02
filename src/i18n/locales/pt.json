@@ -1,0 +1,123 @@
+{
+  "nav": {
+    "howItWorks": "COMO FUNCIONA",
+    "pricing": "PREÇOS",
+    "blog": "BLOG",
+    "commercial": "COMERCIAL",
+    "joinWaitlist": "ENTRAR NA LISTA",
+    "bookNow": "AGENDAR AGORA"
+  },
+  "banner": {
+    "text": "LANÇAMENTO EM NORTH MIAMI BEACH // INSCRIÇÕES ANTECIPADAS ABERTAS"
+  },
+  "hero": {
+    "headline": "CLEARSCOPE ESTÁ AGENDANDO.",
+    "subhead": "Inspeções de esgoto por câmera por $149. Sem reparos. Sem agenda oculta. Só prova em vídeo do que tem nos seus canos.",
+    "cta": "GARANTIR MEU ACESSO ANTECIPADO",
+    "tagline": "A GENTE OLHA. NÃO MEXE.",
+    "body": "Enviamos uma câmera pela sua linha de esgoto, gravamos tudo que encontramos e entregamos o vídeo — no mesmo dia. Não vendemos reparos."
+  },
+  "stats": {
+    "earlySignups": "Inscrições Antecipadas",
+    "foundingRate": "Taxa Fundadora",
+    "inspectionTime": "Tempo de Inspeção"
+  },
+  "story": {
+    "eyebrow": "POR QUE A CLEARSCOPE EXISTE",
+    "headline": "O Problema dos $8.000",
+    "plumberLabel": "DIAGNÓSTICO DO ENCANADOR",
+    "plumberSub": "Substituição completa da tubulação de ferro fundido",
+    "cameraLabel": "O QUE A CÂMERA ENCONTROU",
+    "cameraSub": "Mangueira flexível dobrada. Conserto de um biscateiro.",
+    "body": "Um encanador diagnosticou o ralo lento do nosso fundador como tubulação de ferro fundido corroída — substituição total da linha de esgoto, $8.000. Uma inspeção por câmera revelou a causa real: uma mangueira flexível embaixo da banheira de pé, dobrada porque foi instalada três polegadas comprida demais. Um biscateiro consertou por menos de $200. É por isso que a ClearScope existe — porque uma câmera mostra o que realmente está lá, não o que alguém espera te vender.",
+    "footnote": "O biscateiro cobrou $180. É assim nesse setor."
+  },
+  "howItWorks": {
+    "headline": "O que $149 te dá",
+    "step1Title": "Agende em 60 segundos",
+    "step1Body": "Atendimento no mesmo dia ou no dia seguinte em North Miami Beach.",
+    "step2Title": "30 minutos no local",
+    "step2Body": "Nossa câmera percorre até 200ft de linha de esgoto. Zero dano ao jardim.",
+    "step3Title": "Vídeo até o fim do dia",
+    "step3Body": "Vídeo completo da inspeção entregue no seu Google Drive. Seu para guardar, compartilhar com qualquer encanador ou anexar à sua solicitação de seguro."
+  },
+  "form": {
+    "headlineLive": "GARANTA SEU LUGAR.",
+    "subheadLive": "AGENDAMENTOS ABERTOS — NORTH MIAMI BEACH",
+    "emailLabel": "Endereço de E-mail",
+    "emailPlaceholder": "seu@email.com",
+    "zipLabel": "CEP",
+    "propertyLabel": "Tipo de Imóvel",
+    "residential": "RES",
+    "commercial": "COM",
+    "situationLabel": "O que descreve sua situação?",
+    "situationOptional": "(opcional)",
+    "slowDrain": "RALO ENTUPIDO",
+    "gotQuote": "RECEBI UM ORÇAMENTO",
+    "buyingSelling": "COMPRANDO / VENDENDO",
+    "planningAhead": "PREVENÇÃO",
+    "submitLive": "GARANTIR MEU LUGAR — $149",
+    "submitComingSoon": "ENTRAR NA LISTA DE ESPERA",
+    "submitNotServed": "AVISE-ME QUANDO LANÇAR",
+    "disclaimer": "Sem pagamento necessário. Cancele quando quiser. Suas informações nunca são compartilhadas.",
+    "successHeadlineLive": "VOCÊ ESTÁ NA LISTA.",
+    "successBodyLive": "Entraremos em contato para confirmar seu agendamento em North Miami Beach.",
+    "zipLive": "EM OPERAÇÃO — {city}",
+    "zipComingSoon": "EM BREVE — {city}",
+    "zipNotServed": "AINDA NÃO ATENDEMOS — {city}"
+  },
+  "benefits": {
+    "priorityTitle": "AGENDAMENTO PRIORITÁRIO",
+    "priorityBody": "Quem está primeiro na lista garante os primeiros horários quando abrirmos os agendamentos.",
+    "rateTitle": "TAXA FUNDADORA GARANTIDA",
+    "rateBody": "As inscrições antecipadas ficam fixadas em $149 — a menor taxa que a ClearScope vai cobrar.",
+    "obligationTitle": "ZERO COMPROMISSO",
+    "obligationBody": "Sem pagamento para se inscrever. Você agenda e paga só quando estiver pronto."
+  },
+  "commercial": {
+    "eyebrow": "IMÓVEIS COMERCIAIS",
+    "headline": "Restaurantes. HOAs. Administradoras de Imóveis.",
+    "body": "A ClearScope Commercial oferece inspeções documentadas de tubulação para conformidade com DERM, sinistros de seguro e due diligence imobiliária. A partir de $275.",
+    "cta": "CONSULTAS COMERCIAIS →"
+  },
+  "faq": {
+    "headline": "Perguntas",
+    "q1": "QUANDO VOCÊS VÃO COMEÇAR A AGENDAR?",
+    "a1": "Estamos validando a demanda em North Miami Beach agora. Assim que confirmarmos interesse suficiente, anunciaremos nossa data de lançamento para todos na lista de espera — você será o primeiro a saber e o primeiro a agendar.",
+    "q2": "PRECISO PAGAR PARA ME INSCREVER?",
+    "a2": "Não. Entrar na lista de espera é completamente gratuito. Você só paga quando agendar uma inspeção de verdade. Sem compromisso e pode cancelar quando quiser.",
+    "q3": "POR QUE SÓ $149?",
+    "a3": "Porque fazemos só uma coisa. Encanadores cobram $300–$500 por uma inspeção com câmera porque esperam te vender um reparo na mesma visita. A gente não espera te vender nada. Isso tem valor.",
+    "q4": "VOCÊS CONSERTAM OS CANOS COM PROBLEMAS?",
+    "a4": "Não. A ClearScope é um serviço de diagnóstico, não uma empresa de encanamento. Colocamos uma câmera no seu cano e mostramos o que tem lá — não tocamos, cortamos nem consertamos nada. Pense em nós como um centro de imagem médica: fornecemos o exame. Você decide o que fazer depois."
+  },
+  "finalCta": {
+    "eyebrow": "NORTH MIAMI BEACH // 33160 // 33162",
+    "headline": "SAIBA O QUE TEM NOS SEUS CANOS ANTES DO SEU ENCANADOR.",
+    "cta": "GARANTIR MEU ACESSO ANTECIPADO",
+    "tagline": "A GENTE OLHA. NÃO MEXE."
+  },
+  "booking": {
+    "confirmed": "Seu agendamento está confirmado.",
+    "confirmedName": "Seu agendamento está confirmado, {name}.",
+    "confirmationSent": "CONFIRMAÇÃO ENVIADA PARA SEU E-MAIL",
+    "whatNext": "O QUE ACONTECE AGORA",
+    "step1": "Você receberá um lembrete 24 horas antes da sua inspeção.",
+    "step2": "Seu técnico chega em um veículo identificado com crachá ClearScope.",
+    "step3": "Seu vídeo completo de inspeção chega em até 4 horas após a inspeção.",
+    "addCalendar": "ADICIONAR AO CALENDÁRIO",
+    "questions": "DÚVIDAS? FALE CONOSCO EM INFO@CLEARSCOPE.PRO"
+  },
+  "footer": {
+    "copyright": "©2025 CLEARSCOPE DIAGNOSTICS. NORTH MIAMI BEACH, FL.",
+    "precision": "PRECISÃO OBRIGATÓRIA.",
+    "status": "STATUS_SISTEMA: ONLINE",
+    "home": "INÍCIO",
+    "blog": "BLOG",
+    "pitch": "APRESENTAÇÃO",
+    "commercial": "COMERCIAL",
+    "privacy": "PRIVACIDADE",
+    "terms": "TERMOS",
+    "operators": "OPERADORES"
+  }
+}

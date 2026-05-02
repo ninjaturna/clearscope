@@ -1,8 +1,10 @@
 import { useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 
 export default function BookingConfirmedPage() {
+  const { t } = useTranslation()
   const params = new URLSearchParams(window.location.search)
   const name = params.get('name') || ''
 
@@ -14,13 +16,13 @@ export default function BookingConfirmedPage() {
     <div className="bg-[#141414] min-h-screen text-[#E8E4DC] font-body">
 
       <Nav
-        ctaLabel="BOOK NOW"
+        ctaLabel={t('nav.bookNow')}
         ctaHref="/waitlist"
         links={[
-          { label: 'How It Works', href: '/#how-it-works' },
-          { label: 'Pricing',      href: '/#pricing' },
-          { label: 'Blog',         href: '/blog' },
-          { label: 'Commercial',   href: '/commercial' },
+          { label: t('nav.howItWorks'), href: '/#how-it-works' },
+          { label: t('nav.pricing'),    href: '/#pricing' },
+          { label: t('nav.blog'),       href: '/blog' },
+          { label: t('nav.commercial'), href: '/commercial' },
         ]}
       />
 
@@ -34,29 +36,27 @@ export default function BookingConfirmedPage() {
           <span className="material-symbols-outlined text-[#39D353]" style={{ fontSize: '40px' }}>check</span>
         </div>
 
-        {/* Headline */}
         <h1 className="font-headline text-4xl md:text-5xl font-extrabold text-white uppercase tracking-tighter leading-none mb-4">
-          {name ? `You're booked, ${name}.` : "You're booked."}
+          {name ? t('booking.confirmedName', { name }) : t('booking.confirmed')}
         </h1>
 
         <p className="font-mono text-[11px] text-[#39D353] uppercase tracking-[0.25em] mb-16">
-          CONFIRMATION SENT TO YOUR EMAIL
+          {t('booking.confirmationSent')}
         </p>
 
-        {/* What happens next */}
         <div
           className="w-full max-w-md text-left"
           style={{ borderTop: '3px solid #39D353' }}
         >
           <p className="font-mono text-[10px] text-[#39D353] uppercase tracking-[0.25em] py-5">
-            WHAT HAPPENS NEXT
+            {t('booking.whatNext')}
           </p>
 
           <div className="space-y-0">
             {[
-              { n: '01', text: "You'll receive a reminder 24 hours before your inspection." },
-              { n: '02', text: 'Your tech arrives in a marked vehicle with ClearScope ID.' },
-              { n: '03', text: 'Your full inspection video arrives within 4 hours of the inspection.' },
+              { n: '01', text: t('booking.step1') },
+              { n: '02', text: t('booking.step2') },
+              { n: '03', text: t('booking.step3') },
             ].map(step => (
               <div
                 key={step.n}
@@ -70,18 +70,16 @@ export default function BookingConfirmedPage() {
           </div>
         </div>
 
-        {/* Add to calendar (placeholder) */}
         <a
           href="#"
           className="mt-12 font-mono text-[11px] text-[#39D353] uppercase tracking-widest flex items-center gap-2"
         >
           <span className="material-symbols-outlined" style={{ fontSize: '16px' }}>calendar_add_on</span>
-          ADD TO CALENDAR
+          {t('booking.addCalendar')}
         </a>
 
-        {/* Sub-message */}
         <p className="font-mono text-[10px] text-[#6B7280] uppercase tracking-widest mt-16">
-          QUESTIONS? REACH US AT INFO@CLEARSCOPE.PRO
+          {t('booking.questions')}
         </p>
 
       </main>

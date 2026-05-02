@@ -1,0 +1,123 @@
+{
+  "nav": {
+    "howItWorks": "HOW IT WORKS",
+    "pricing": "PRICING",
+    "blog": "BLOG",
+    "commercial": "COMMERCIAL",
+    "joinWaitlist": "JOIN WAITLIST",
+    "bookNow": "BOOK NOW"
+  },
+  "banner": {
+    "text": "NORTH MIAMI BEACH LAUNCH // NOW ACCEPTING EARLY SIGNUPS"
+  },
+  "hero": {
+    "headline": "CLEARSCOPE IS TAKING APPOINTMENTS.",
+    "subhead": "$149 sewer camera inspections. No repairs. No agenda. Just video proof of what's in your pipes.",
+    "cta": "CLAIM MY EARLY ACCESS SPOT",
+    "tagline": "WE LOOK. WE DON'T TOUCH.",
+    "body": "We send a camera through your sewer line, record everything we find, and deliver the video — same day. We don't sell repairs."
+  },
+  "stats": {
+    "earlySignups": "Early Signups",
+    "foundingRate": "Founding Rate",
+    "inspectionTime": "Inspection Time"
+  },
+  "story": {
+    "eyebrow": "WHY CLEARSCOPE EXISTS",
+    "headline": "The $8,000 Kink",
+    "plumberLabel": "PLUMBER'S DIAGNOSIS",
+    "plumberSub": "Full cast iron line replacement",
+    "cameraLabel": "CAMERA FINDING",
+    "cameraSub": "Kinked flexible hose. Handyman fix.",
+    "body": "A plumber diagnosed our founder's slow drain as corroded cast iron pipes — full sewer line replacement, $8,000. A camera inspection revealed the real cause: a flexible hose under the standing tub, kinked because it was installed three inches too long. A handyman fixed it for under $200. That's why ClearScope exists — because a camera shows you what's actually there, not what someone hopes to sell you.",
+    "footnote": "The handyman charged $180. It's Tuesday in this industry."
+  },
+  "howItWorks": {
+    "headline": "What $149 gets you",
+    "step1Title": "Book in 60 seconds",
+    "step1Body": "Same-day or next-day appointments in North Miami Beach.",
+    "step2Title": "30 minutes on-site",
+    "step2Body": "Our camera traverses up to 200ft of sewer line. Zero damage to landscaping.",
+    "step3Title": "Video by end of day",
+    "step3Body": "Full inspection video delivered to your Google Drive. Yours to keep, share with any plumber, or file with your insurance claim."
+  },
+  "form": {
+    "headlineLive": "CLAIM YOUR SPOT.",
+    "subheadLive": "NOW BOOKING — NORTH MIAMI BEACH",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "your@email.com",
+    "zipLabel": "ZIP Code",
+    "propertyLabel": "Property Type",
+    "residential": "RES",
+    "commercial": "COM",
+    "situationLabel": "What describes your situation?",
+    "situationOptional": "(optional)",
+    "slowDrain": "SLOW DRAIN",
+    "gotQuote": "GOT A REPAIR QUOTE",
+    "buyingSelling": "BUYING / SELLING",
+    "planningAhead": "JUST PLANNING AHEAD",
+    "submitLive": "CLAIM MY SPOT — $149",
+    "submitComingSoon": "JOIN THE WAITLIST",
+    "submitNotServed": "NOTIFY ME WHEN YOU LAUNCH",
+    "disclaimer": "No payment required. Unsubscribe anytime. Your information is never shared.",
+    "successHeadlineLive": "YOU'RE ON THE LIST.",
+    "successBodyLive": "We'll reach out to confirm your appointment in North Miami Beach.",
+    "zipLive": "LIVE — {city}",
+    "zipComingSoon": "COMING SOON — {city}",
+    "zipNotServed": "NOT YET SERVED — {city}"
+  },
+  "benefits": {
+    "priorityTitle": "PRIORITY BOOKING",
+    "priorityBody": "First on the list gets first appointment slots when we open for bookings.",
+    "rateTitle": "FOUNDING RATE LOCKED",
+    "rateBody": "Early signups are locked at $149 — the lowest ClearScope will ever charge.",
+    "obligationTitle": "ZERO OBLIGATION",
+    "obligationBody": "No payment to sign up. You book and pay only when you're ready."
+  },
+  "commercial": {
+    "eyebrow": "COMMERCIAL PROPERTIES",
+    "headline": "Restaurants. HOAs. Property Managers.",
+    "body": "ClearScope Commercial offers documented pipe inspections for DERM compliance, insurance claims, and property due diligence. Starting at $275.",
+    "cta": "COMMERCIAL INQUIRIES →"
+  },
+  "faq": {
+    "headline": "Questions",
+    "q1": "WHEN WILL YOU START TAKING APPOINTMENTS?",
+    "a1": "We're validating demand in North Miami Beach now. Once we confirm enough interest, we'll announce our launch date to everyone on the waitlist — you'll be first to know and first to book.",
+    "q2": "DO I HAVE TO PAY TO SIGN UP?",
+    "a2": "No. Joining the waitlist is completely free. You only pay when you book an actual inspection. There's no commitment and you can unsubscribe anytime.",
+    "q3": "WHY IS IT ONLY $149?",
+    "a3": "Because we only do one thing. Plumbers charge $300–$500 for a camera inspection because they're hoping to sell you a repair on the same visit. We're not hoping to sell you anything. That's worth something.",
+    "q4": "DO YOU FIX THE PIPES YOU FIND PROBLEMS IN?",
+    "a4": "No. ClearScope is a diagnostic service, not a plumbing contractor. We put a camera in your pipe and show you what's there — we don't touch, cut, or repair anything. Think of us like a medical imaging center: we provide the scan. You decide what to do next."
+  },
+  "finalCta": {
+    "eyebrow": "NORTH MIAMI BEACH // 33160 // 33162",
+    "headline": "KNOW WHAT'S IN YOUR PIPES BEFORE YOUR PLUMBER DOES.",
+    "cta": "CLAIM MY EARLY ACCESS SPOT",
+    "tagline": "WE LOOK. WE DON'T TOUCH."
+  },
+  "booking": {
+    "confirmed": "You're booked.",
+    "confirmedName": "You're booked, {name}.",
+    "confirmationSent": "CONFIRMATION SENT TO YOUR EMAIL",
+    "whatNext": "WHAT HAPPENS NEXT",
+    "step1": "You'll receive a reminder 24 hours before your inspection.",
+    "step2": "Your tech arrives in a marked vehicle with ClearScope ID.",
+    "step3": "Your full inspection video arrives within 4 hours of the inspection.",
+    "addCalendar": "ADD TO CALENDAR",
+    "questions": "QUESTIONS? REACH US AT INFO@CLEARSCOPE.PRO"
+  },
+  "footer": {
+    "copyright": "©2025 CLEARSCOPE DIAGNOSTICS. NORTH MIAMI BEACH, FL.",
+    "precision": "PRECISION MANDATORY.",
+    "status": "SYSTEM_STATUS: ONLINE",
+    "home": "HOME",
+    "blog": "BLOG",
+    "pitch": "PITCH",
+    "commercial": "COMMERCIAL",
+    "privacy": "PRIVACY",
+    "terms": "TERMS",
+    "operators": "OPERATORS"
+  }
+}

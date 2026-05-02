@@ -1,0 +1,123 @@
+{
+  "nav": {
+    "howItWorks": "KIJAN SA MACHE",
+    "pricing": "PRI",
+    "blog": "BLOG",
+    "commercial": "KOMÈSYAL",
+    "joinWaitlist": "ENSKRI SOU LIS LA",
+    "bookNow": "REZÈVE KOUNYE A"
+  },
+  "banner": {
+    "text": "LANCEMENT NAN NORTH MIAMI BEACH // ENSKRIPSYON BONÈ OUVÈ"
+  },
+  "hero": {
+    "headline": "CLEARSCOPE AP PRAN RANDEVOU.",
+    "subhead": "Enspeksyon kamera egou pou $149. Pa gen reparasyon. Pa gen entansyon kache. Jis prèv videyo sa ki nan tuyò ou.",
+    "cta": "REZÈVE PLAS AKSÈ BONÈ MWEN",
+    "tagline": "NOU GADE. NOU PA MANYEN.",
+    "body": "Nou voye yon kamera nan liy egou ou, nou anrejistre tout sa nou jwenn, epi nou livè videyo a — menm jou a. Nou pa vann reparasyon."
+  },
+  "stats": {
+    "earlySignups": "Enskripsyon Bonè",
+    "foundingRate": "Tarif Fondatè",
+    "inspectionTime": "Tan Enspeksyon"
+  },
+  "story": {
+    "eyebrow": "POUKISA CLEARSCOPE EGZISTE",
+    "headline": "Pwoblèm $8,000 la",
+    "plumberLabel": "DYAGNOSTIK PLONBYE A",
+    "plumberSub": "Ranplasman konplè liy fon an",
+    "cameraLabel": "SA KAMERA A JWENN",
+    "cameraSub": "Tuyò fleksib ki koube. Travay yon bòs lakay.",
+    "body": "Yon plonbye te dyagnostike egou ki koule dousman nan kay fondatè nou an kòm tuyò fon rouye — ranplasman konplè liy egou a, $8,000. Yon enspeksyon kamera te revele vrè kòz la : yon tuyò fleksib anba basen kanpe a, ki te koube paske yo te enstale li twa pous twò long. Yon bòs lakay te ranje l pou mwens pase $200. Se poutèt sa ClearScope egziste — paske yon kamera montre w sa ki reyèlman la, pa sa yon moun espere vann ou.",
+    "footnote": "Bòs lakay la te chaje $180. Se konsa bagay yo ye nan domèn sa a."
+  },
+  "howItWorks": {
+    "headline": "Sa $149 ba ou",
+    "step1Title": "Rezève an 60 segond",
+    "step1Body": "Randevou menm jou oswa jou apre nan North Miami Beach.",
+    "step2Title": "30 minit sou plas",
+    "step2Body": "Kamera nou an travèse jiska 200ft nan liy egou. Pa gen okenn domaj nan jaden ou.",
+    "step3Title": "Videyo avan fen jounen an",
+    "step3Body": "Videyo enspeksyon konplè livè nan Google Drive ou. Pou ou kenbe, pataje ak nenpòt plonbye, oswa depoze ak reklam asirans ou."
+  },
+  "form": {
+    "headlineLive": "REZÈVE PLAS OU.",
+    "subheadLive": "REZÈVASYON OUVÈ — NORTH MIAMI BEACH",
+    "emailLabel": "Adrès Imel",
+    "emailPlaceholder": "ou@imel.com",
+    "zipLabel": "Kòd Postal",
+    "propertyLabel": "Tip Pwopriyete",
+    "residential": "RÈZ",
+    "commercial": "KOM",
+    "situationLabel": "Ki sa ki dekri sitiyasyon ou ?",
+    "situationOptional": "(opsyonèl)",
+    "slowDrain": "EGO KOULE DOUSMAN",
+    "gotQuote": "JWENN ESTI REPARASYON",
+    "buyingSelling": "ACHTE / VANN",
+    "planningAhead": "PREVANSYON",
+    "submitLive": "REZÈVE PLAS MWEN — $149",
+    "submitComingSoon": "ENSKRI SOU LIS DATANT",
+    "submitNotServed": "AVIZE M LÈ OU LOUVRI",
+    "disclaimer": "Pa bezwen peye. Dezabòne nenpòt ki lè. Enfòmasyon ou pa janm pataje.",
+    "successHeadlineLive": "OU SOU LIS LA.",
+    "successBodyLive": "Nou pral kontakte ou pou konfime randevou ou nan North Miami Beach.",
+    "zipLive": "EN SÈVIS — {city}",
+    "zipComingSoon": "BYENTO DISPONIB — {city}",
+    "zipNotServed": "PA DISPONIB ANKÒ — {city}"
+  },
+  "benefits": {
+    "priorityTitle": "REZÈVASYON PRIORITÈ",
+    "priorityBody": "Premye sou lis la jwenn premye plas randevou lè nou ouvè rezèvasyon yo.",
+    "rateTitle": "TARIF FONDATÈ BLOKE",
+    "rateBody": "Enskripsyon bonè yo bloke a $149 — pi ba tarif ClearScope pral janm chaje.",
+    "obligationTitle": "ZERO ANGAJMAN",
+    "obligationBody": "Pa bezwen peye pou enskri. Ou rezève epi peye sèlman lè ou prè."
+  },
+  "commercial": {
+    "eyebrow": "PWOPRIYETE KOMÈSYAL",
+    "headline": "Restoran. HOA. Jesyonè Pwopriyete.",
+    "body": "ClearScope Commercial ofri enspeksyon tuyò dokimante pou konformite DERM, reklam asirans, ak dilijans pwopriyete. Kòmanse a $275.",
+    "cta": "DEMANN KOMÈSYAL →"
+  },
+  "faq": {
+    "headline": "Kesyon",
+    "q1": "KI LÈ OU PRAl KÒMANSE PRAN RANDEVOU ?",
+    "a1": "Nou ap valide demann nan North Miami Beach kounye a. Yon fwa nou konfime ase enterè, nou pral anonse dat lancement nou an bay tout moun sou lis datant la — ou pral premye konnen epi premye rezève.",
+    "q2": "ÈSKE M DWÈ PEYE POU ENSKRI ?",
+    "a2": "Non. Rantre sou lis datant la totalman gratis. Ou sèlman peye lè ou rezève yon vre enspeksyon. Pa gen angajman epi ou ka dezabòne nenpòt ki lè.",
+    "q3": "POUKISA SE SÈLMAN $149 ?",
+    "a3": "Paske nou fè yon sèl bagay. Plonbye yo chaje $300–$500 pou yon enspeksyon kamera paske yo espere vann ou yon reparasyon pandan menm vizit la. Nou pa espere vann ou anyen. Sa gen valè.",
+    "q4": "ÈSKE OU RANJE TUYÒ KI GEN PWOBLÈM ?",
+    "a4": "Non. ClearScope se yon sèvis dyagnostik, pa yon antreprenè plonbri. Nou mete yon kamera nan tuyò ou epi montre ou sa ki ladan — nou pa manyen, koupe, oswa ranje anyen. Panse nou kòm yon sant imajri medikal : nou bay egzamen an. Ou deside kisa pou fè apre."
+  },
+  "finalCta": {
+    "eyebrow": "NORTH MIAMI BEACH // 33160 // 33162",
+    "headline": "KONNEN SA KI NAN TUYÒ OU ANVAN PLONBYE OU.",
+    "cta": "REZÈVE PLAS AKSÈ BONÈ MWEN",
+    "tagline": "NOU GADE. NOU PA MANYEN."
+  },
+  "booking": {
+    "confirmed": "Ou rezève.",
+    "confirmedName": "Ou rezève, {name}.",
+    "confirmationSent": "KONFIRMASYON VOYE NAN IMEL OU",
+    "whatNext": "KI SA K AP PASE APRE",
+    "step1": "Ou pral resevwa yon rapèl 24 èdtan anvan enspeksyon ou.",
+    "step2": "Teknisyen ou rive nan yon machin make ak badge ClearScope.",
+    "step3": "Videyo enspeksyon konplè ou rive nan 4 èdtan apre enspeksyon an.",
+    "addCalendar": "AJOUTE NAN KALANDRIYE",
+    "questions": "KESYON ? KONTAKTE NOU NAN INFO@CLEARSCOPE.PRO"
+  },
+  "footer": {
+    "copyright": "©2025 CLEARSCOPE DIAGNOSTICS. NORTH MIAMI BEACH, FL.",
+    "precision": "PRESIZYON OBLIGATWA.",
+    "status": "ESTATI_SISTÈM : ANLIY",
+    "home": "AKÈY",
+    "blog": "BLOG",
+    "pitch": "PREZANTASYON",
+    "commercial": "KOMÈSYAL",
+    "privacy": "KONFIDANSYALITE",
+    "terms": "KONDISYON",
+    "operators": "OPERATÈ"
+  }
+}
