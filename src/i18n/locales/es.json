@@ -1,0 +1,123 @@
+{
+  "nav": {
+    "howItWorks": "CÓMO FUNCIONA",
+    "pricing": "PRECIOS",
+    "blog": "BLOG",
+    "commercial": "COMERCIAL",
+    "joinWaitlist": "UNIRSE A LA LISTA",
+    "bookNow": "RESERVAR"
+  },
+  "banner": {
+    "text": "LANZAMIENTO EN NORTH MIAMI BEACH // AHORA ACEPTANDO REGISTROS ANTICIPADOS"
+  },
+  "hero": {
+    "headline": "CLEARSCOPE ESTÁ TOMANDO CITAS.",
+    "subhead": "Inspecciones de cámara de alcantarilla por $149. Sin reparaciones. Sin agenda oculta. Solo prueba en video de lo que hay en sus tuberías.",
+    "cta": "RECLAMAR MI LUGAR DE ACCESO ANTICIPADO",
+    "tagline": "MIRAMOS. NO TOCAMOS.",
+    "body": "Enviamos una cámara por su línea de alcantarilla, grabamos todo lo que encontramos y entregamos el video — el mismo día. No vendemos reparaciones."
+  },
+  "stats": {
+    "earlySignups": "Registros anticipados",
+    "foundingRate": "Tarifa fundadora",
+    "inspectionTime": "Tiempo de inspección"
+  },
+  "story": {
+    "eyebrow": "POR QUÉ EXISTE CLEARSCOPE",
+    "headline": "El doblez de $8,000",
+    "plumberLabel": "DIAGNÓSTICO DEL PLOMERO",
+    "plumberSub": "Reemplazo completo de tubería de hierro fundido",
+    "cameraLabel": "HALLAZGO DE LA CÁMARA",
+    "cameraSub": "Manguera flexible doblada. Reparación de handyman.",
+    "body": "Un plomero diagnosticó el desagüe lento del fundador como tuberías de hierro fundido corroídas — reemplazo total de la línea de alcantarilla, $8,000. Una inspección con cámara reveló la causa real: una manguera flexible debajo de la bañera, doblada porque fue instalada tres pulgadas demasiado larga. Un handyman lo arregló por menos de $200. Por eso existe ClearScope — porque una cámara le muestra lo que realmente hay, no lo que alguien espera venderle.",
+    "footnote": "El handyman cobró $180. Así es este sector."
+  },
+  "howItWorks": {
+    "headline": "Qué obtiene por $149",
+    "step1Title": "Reserve en 60 segundos",
+    "step1Body": "Citas el mismo día o al día siguiente en North Miami Beach.",
+    "step2Title": "30 minutos en el lugar",
+    "step2Body": "Nuestra cámara recorre hasta 200ft de línea de alcantarilla. Cero daños al paisajismo.",
+    "step3Title": "Video al final del día",
+    "step3Body": "Video de inspección completo entregado a su Google Drive. Suyo para conservar, compartir con cualquier plomero o presentar con su reclamo de seguro."
+  },
+  "form": {
+    "headlineLive": "RECLAME SU LUGAR.",
+    "subheadLive": "RESERVANDO AHORA — NORTH MIAMI BEACH",
+    "emailLabel": "Correo electrónico",
+    "emailPlaceholder": "su@correo.com",
+    "zipLabel": "Código postal",
+    "propertyLabel": "Tipo de propiedad",
+    "residential": "RES",
+    "commercial": "COM",
+    "situationLabel": "¿Qué describe su situación?",
+    "situationOptional": "(opcional)",
+    "slowDrain": "DESAGÜE LENTO",
+    "gotQuote": "RECIBÍ UN PRESUPUESTO",
+    "buyingSelling": "COMPRANDO / VENDIENDO",
+    "planningAhead": "SOLO PREVINIENDO",
+    "submitLive": "RECLAMAR MI LUGAR — $149",
+    "submitComingSoon": "UNIRSE A LA LISTA DE ESPERA",
+    "submitNotServed": "NOTIFICARME EN EL LANZAMIENTO",
+    "disclaimer": "Sin pago requerido. Cancele su suscripción en cualquier momento. Su información nunca se comparte.",
+    "successHeadlineLive": "ESTÁ EN LA LISTA.",
+    "successBodyLive": "Nos comunicaremos para confirmar su cita en North Miami Beach.",
+    "zipLive": "DISPONIBLE — {city}",
+    "zipComingSoon": "PRÓXIMAMENTE — {city}",
+    "zipNotServed": "AÚN NO DISPONIBLE — {city}"
+  },
+  "benefits": {
+    "priorityTitle": "RESERVA PRIORITARIA",
+    "priorityBody": "Los primeros en la lista obtienen los primeros turnos cuando abramos las reservas.",
+    "rateTitle": "TARIFA FUNDADORA GARANTIZADA",
+    "rateBody": "Los registros anticipados quedan fijos en $149 — la tarifa más baja que ClearScope cobrará.",
+    "obligationTitle": "CERO COMPROMISO",
+    "obligationBody": "Sin pago para registrarse. Reserve y pague solo cuando esté listo."
+  },
+  "commercial": {
+    "eyebrow": "PROPIEDADES COMERCIALES",
+    "headline": "Restaurantes. HOAs. Administradores de propiedades.",
+    "body": "ClearScope Commercial ofrece inspecciones de tuberías documentadas para cumplimiento DERM, reclamos de seguro y diligencia debida de propiedades. Desde $275.",
+    "cta": "CONSULTAS COMERCIALES →"
+  },
+  "faq": {
+    "headline": "Preguntas",
+    "q1": "¿CUÁNDO EMPEZARÁN A TOMAR CITAS?",
+    "a1": "Estamos validando la demanda en North Miami Beach ahora. Una vez que confirmemos suficiente interés, anunciaremos nuestra fecha de lanzamiento a todos en la lista de espera — usted será el primero en saber y el primero en reservar.",
+    "q2": "¿TENGO QUE PAGAR PARA REGISTRARME?",
+    "a2": "No. Unirse a la lista de espera es completamente gratuito. Solo paga cuando reserva una inspección real. No hay compromiso y puede cancelar en cualquier momento.",
+    "q3": "¿POR QUÉ SOLO $149?",
+    "a3": "Porque solo hacemos una cosa. Los plomeros cobran $300–$500 por una inspección con cámara porque esperan venderle una reparación en la misma visita. Nosotros no esperamos venderle nada. Eso vale algo.",
+    "q4": "¿REPARAN LAS TUBERÍAS DONDE ENCUENTRAN PROBLEMAS?",
+    "a4": "No. ClearScope es un servicio de diagnóstico, no un contratista de plomería. Ponemos una cámara en su tubería y le mostramos lo que hay — no tocamos, cortamos ni reparamos nada. Piénsenos como un centro de imágenes médicas: proporcionamos el escaneo. Usted decide qué hacer después."
+  },
+  "finalCta": {
+    "eyebrow": "NORTH MIAMI BEACH // 33160 // 33162",
+    "headline": "SEPA LO QUE HAY EN SUS TUBERÍAS ANTES QUE SU PLOMERO.",
+    "cta": "RECLAMAR MI LUGAR DE ACCESO ANTICIPADO",
+    "tagline": "MIRAMOS. NO TOCAMOS."
+  },
+  "booking": {
+    "confirmed": "Su cita está confirmada.",
+    "confirmedName": "Su cita está confirmada, {name}.",
+    "confirmationSent": "CONFIRMACIÓN ENVIADA A SU CORREO",
+    "whatNext": "QUÉ PASA DESPUÉS",
+    "step1": "Recibirá un recordatorio 24 horas antes de su inspección.",
+    "step2": "Su técnico llega en un vehículo identificado con credencial ClearScope.",
+    "step3": "Su video de inspección completo llega dentro de las 4 horas posteriores a la inspección.",
+    "addCalendar": "AGREGAR AL CALENDARIO",
+    "questions": "¿PREGUNTAS? CONTÁCTENOS EN INFO@CLEARSCOPE.PRO"
+  },
+  "footer": {
+    "copyright": "©2025 CLEARSCOPE DIAGNOSTICS. NORTH MIAMI BEACH, FL.",
+    "precision": "PRECISIÓN OBLIGATORIA.",
+    "status": "ESTADO_SISTEMA: EN LÍNEA",
+    "home": "INICIO",
+    "blog": "BLOG",
+    "pitch": "PRESENTACIÓN",
+    "commercial": "COMERCIAL",
+    "privacy": "PRIVACIDAD",
+    "terms": "TÉRMINOS",
+    "operators": "OPERADORES"
+  }
+}

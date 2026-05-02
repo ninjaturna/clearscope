@@ -16,6 +16,7 @@ interface NavProps {
 
 const LANGS = [
   { code: 'en', label: 'EN' },
+  { code: 'es', label: 'ES' },
   { code: 'fr', label: 'FR' },
   { code: 'ht', label: 'HT' },
   { code: 'pt', label: 'PT' },
