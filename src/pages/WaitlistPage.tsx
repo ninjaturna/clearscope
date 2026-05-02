@@ -389,7 +389,7 @@ export default function WaitlistPage() {
           ClearScope Commercial offers documented pipe inspections for DERM compliance, insurance claims, and property due diligence. Starting at $275.
         </p>
         <a
-          href="mailto:info@clearscope.pro"
+          href="mailto:theteam@clearscope.pro"
           className="font-mono text-[11px] text-[#39D353] uppercase tracking-widest"
           onClick={() => window.gtag?.('event', 'commercial_inquiry_click')}
         >
