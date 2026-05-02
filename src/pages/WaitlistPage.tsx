@@ -44,6 +44,10 @@ export default function WaitlistPage() {
         }),
       })
       setSubmitState('success')
+      window.gtag?.('event', 'waitlist_signup', {
+        property_type: propertyType,
+        zip_status: zipEntry?.status ?? 'unknown',
+      })
     } catch {
       setSubmitState('error')
     }
@@ -384,7 +388,11 @@ export default function WaitlistPage() {
         <p className="text-[#9CA3AF] font-body text-sm mb-4">
           ClearScope Commercial offers documented pipe inspections for DERM compliance, insurance claims, and property due diligence. Starting at $275.
         </p>
-        <a href="mailto:info@clearscope.pro" className="font-mono text-[11px] text-[#39D353] uppercase tracking-widest">
+        <a
+          href="mailto:info@clearscope.pro"
+          className="font-mono text-[11px] text-[#39D353] uppercase tracking-widest"
+          onClick={() => window.gtag?.('event', 'commercial_inquiry_click')}
+        >
           COMMERCIAL INQUIRIES →
         </a>
       </section>

@@ -1,10 +1,14 @@
+import { useEffect } from 'react'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 
 export default function BookingConfirmedPage() {
-  // Extract booking details from URL params if present
   const params = new URLSearchParams(window.location.search)
   const name = params.get('name') || ''
+
+  useEffect(() => {
+    window.gtag?.('event', 'booking_confirmed', { value: 149, currency: 'USD' })
+  }, [])
 
   return (
     <div className="bg-[#141414] min-h-screen text-[#E8E4DC] font-body">
